@@ -1,4 +1,4 @@
-
+@smoke
 Feature:[US033] As an administrator, I want a page on the site where I can see all
                 active and inactive customers together.
 

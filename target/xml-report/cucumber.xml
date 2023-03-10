@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="2" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="4" time="111.178">
+<testcase classname="[US033] As an administrator, I want a page on the site where I can see all" name="[TC001] When the All Customer button on the Dashboard Side Bar is clicked," time="20.743">
+<system-out><![CDATA[Given user goes to admin login page.........................................passed
+Then enters valid email to mail box.........................................passed
+Then enters valid password to passwprd box..................................passed
+And clicks to the sign in button............................................passed
+Then clicks to customer button..............................................passed
+Then clisks to all customer button..........................................passed
+And user verifies that he is on page All customer...........................passed
+]]></system-out>
+</testcase>
+<testcase classname="[US033] As an administrator, I want a page on the site where I can see all" name="[TC002] Verify that the All Customer List is visible on the All Customer page." time="28.837">
+<system-out><![CDATA[Given user goes to admin login page.........................................passed
+Then enters valid email to mail box.........................................passed
+Then enters valid password to passwprd box..................................passed
+And clicks to the sign in button............................................passed
+Then clicks to customer button..............................................passed
+Then clisks to all customer button..........................................passed
+And verifies that the All Customer List is visible..........................passed
+]]></system-out>
+</testcase>
+<testcase classname="[US033] As an administrator, I want a page on the site where I can see all" name="[TC003] When the radio button in the Is Active column of the All Customer List is clicked," time="40.112">
+<failure message="element not interactable&#10;  (Session info: chrome=109.0.5414.120)&#10;Build info: version: '4.5.3', revision: '4b786a1e430'&#10;System info: os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_192'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [da3fd46d690fce1bc87cb8f01086c316, clickElement {id=93ddf295-414b-4db1-94f9-e89c32866490}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.120, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Users\kenan\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:4533}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:4533/devtool..., se:cdpVersion: 109.0.5414.120, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Element: [[ChromeDriver: chrome on WINDOWS (da3fd46d690fce1bc87cb8f01086c316)] -&gt; xpath: (//td[@class='sorting_1'])[1]]&#10;Session ID: da3fd46d690fce1bc87cb8f01086c316" type="org.openqa.selenium.ElementNotInteractableException"><![CDATA[Given user goes to admin login page.........................................passed
+Then enters valid email to mail box.........................................passed
+Then enters valid password to passwprd box..................................passed
+And clicks to the sign in button............................................passed
+Then clicks to customer button..............................................passed
+Then clisks to all customer button..........................................passed
+And clicks to sorting button................................................failed
+Then clicks to is active radio button.......................................skipped
+And verifies that success toast massage is displayed........................skipped
+
+StackTrace:
+org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=109.0.5414.120)
+Build info: version: '4.5.3', revision: '4b786a1e430'
+System info: os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_192'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [da3fd46d690fce1bc87cb8f01086c316, clickElement {id=93ddf295-414b-4db1-94f9-e89c32866490}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.120, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Users\kenan\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:4533}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:4533/devtool..., se:cdpVersion: 109.0.5414.120, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (da3fd46d690fce1bc87cb8f01086c316)] -> xpath: (//td[@class='sorting_1'])[1]]
+Session ID: da3fd46d690fce1bc87cb8f01086c316
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:541)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
+	at com.sun.proxy.$Proxy21.click(Unknown Source)
+	at stepdefinitions.US033.clicksToSortingButton(US033.java:59)
+	at ✽.clicks to sorting button(file:///C:/Users/kenan/IdeaProjects/com.TrendLifebuy/src/test/resources/features/US033.feature:32)
+]]></failure>
+</testcase>
+<testcase classname="[US033] As an administrator, I want a page on the site where I can see all" name="[TC004] Clicking the Active Customer button on the All Customer page should verify that" time="20.792">
+<failure message="" type="java.lang.AssertionError"><![CDATA[Given user goes to admin login page.........................................passed
+Then enters valid email to mail box.........................................passed
+Then enters valid password to passwprd box..................................passed
+And clicks to the sign in button............................................passed
+Then clicks to customer button..............................................passed
+Then clisks to all customer button..........................................passed
+Then clicks to the active customer link.....................................passed
+Then verifies that the Active Customer List is visible......................failed
+
+StackTrace:
+java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:87)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at org.junit.Assert.assertTrue(Assert.java:53)
+	at stepdefinitions.US033.verifiesThatTheActiveCustomerListIsVisible(US033.java:77)
+	at ✽.verifies that the Active Customer List is visible(file:///C:/Users/kenan/IdeaProjects/com.TrendLifebuy/src/test/resources/features/US033.feature:45)
+]]></failure>
+</testcase>
+</testsuite>
