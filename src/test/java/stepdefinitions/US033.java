@@ -22,24 +22,24 @@ public class US033 {
     public void enters_valid_email_to_mail_box() {
         adminLoginPage.eMailBox.sendKeys(ConfigReader.getProperty("adminValidMail"));
     }
-    @Then("enters valid password to passwprd box")
-    public void enters_valid_password_to_passwprd_box() {
+    @Then("enters valid password to password box")
+    public void enters_valid_password_to_password_box() {
         adminLoginPage.passwordBox.sendKeys(ConfigReader.getProperty("adminValidPassword"));
     }
     @Then("clicks to the sign in button")
     public void clicks_to_the_sign_in_button() {
         adminLoginPage.signInBtn.click();
     }
-
-    // [TC001]
     @Then("clicks to customer button")
     public void clicks_to_customer_button() {
         adminDashboardPage.customerBtn.click();
     }
-    @Then("clisks to all customer button")
-    public void clisks_to_all_customer_button() {
+    @Then("clicks to all customer button")
+    public void clicks_to_all_customer_button() {
         adminDashboardPage.allCustomerBtn.click();
     }
+
+    // [TC001]
     @And("user verifies that he is on page All customer")
     public void userVerifiesThatHeIsOnPageAllCustomer() {
         String expectedUrl = "https://trendlifebuy.com/customer/all-customer-list";
@@ -59,7 +59,8 @@ public class US033 {
         adminDashboardPage.sortingBtn.click();
     }
     @Then("clicks to is active radio button")
-    public void clicksToIsActiveRadioButton() {
+    public void clicksToIsActiveRadioButton() throws InterruptedException {
+        Thread.sleep(3000);
         adminDashboardPage.isActiveRadioBtn.click();
     }
     @And("verifies that success toast massage is displayed")

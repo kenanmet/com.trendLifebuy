@@ -9,5 +9,8 @@
         <module name="com.TrendLifebuy" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="com.trendLifebuy" target="1.8" />
+    </bytecodeTargetLevel>
   </component>
 </project>

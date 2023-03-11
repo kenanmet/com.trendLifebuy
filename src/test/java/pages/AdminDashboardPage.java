@@ -22,15 +22,15 @@ public class AdminDashboardPage {
     @FindBy(xpath = "(//td[@class='sorting_1'])[1]")
     public WebElement sortingBtn;
 
-    @FindBy(xpath = "(//span[@class='dtr-data'])[1]")
+    @FindBy(xpath = "(//label[@class='switch_toggle'])[1]")
     public WebElement isActiveRadioBtn;
 
-    @FindBy(xpath = "//div[@class='toast toast-success']")
+    @FindBy(xpath = "//*[@id='toast-container']")
     public WebElement successToastMessage;
 
     @FindBy(xpath = "//a[text()='Active Customer']")
     public WebElement activeCustomerLink;
 
-    @FindBy(xpath = "//div[@id='active_customer']")
+    @FindBy(xpath = "//h3[text()='Active Customer']")
     public WebElement activeCustomerList;
 }
